@@ -15,6 +15,7 @@ class PostAdminForm(forms.ModelForm):
 class PostAdmin(admin.ModelAdmin):
     prepopulated_fields = {"slug": ("title",)}
     form = PostAdminForm
+    # save_as = True при стоздании объекта в админке появлется кнопка "Сохранить как новый объект" для упрощения создания объектов для тестированя
 
 
 class CategoryAdmin(admin.ModelAdmin):

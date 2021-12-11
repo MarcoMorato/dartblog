@@ -1,3 +1,4 @@
+{% load menu %}
 <footer class="footer">
     <div class="container">
         <div class="row">
@@ -5,14 +6,15 @@
                 <div class="footer-bg">
                     <div class="row">
                         <div class="col-md-9">
-                            <div class="footer-menu">
-                                <ul>
-                                    <li class="active"><a href="#">Home</a></li>
-                                    <li><a href="#">lifestyle</a></li>
-                                    <li><a href="#">Food</a></li>
-                                    <li><a href="#">Nature</a></li>
-                                    <li><a href="#">photography</a></li>
-                                </ul>
+                            {% show_menu 'footer-menu' %}
+<!--                            <div class="footer-menu">-->
+<!--                                <ul>-->
+<!--                                    <li><a href="#">Home</a></li>-->
+<!--                                    <li><a href="#">lifestyle</a></li>-->
+<!--                                    <li><a href="#">Food</a></li>-->
+<!--                                    <li><a href="#">Nature</a></li>-->
+<!--                                    <li><a href="#">photography</a></li>-->
+<!--                                </ul>-->
                             </div>
                         </div>
                         <div class="col-md-3">
